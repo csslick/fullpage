@@ -4,19 +4,61 @@
 ul { 
   list-style-type: none;
 }
+h1 { font-size: 40px;}
+h2 { font-size: 35px;}
+h3 { font-size: 30px;}
+h4 { font-size: 25px;}
+p { font-size: 20px;}
 .section {
   text-align:center;
   font-size: 3em;
 }
 .section > h1 {
   position: absolute;
-  left: 20px; top: 20px;
+  left: 20px; top: 40px;
 }
 .section ul li{
-  display: inline-block;
 }
 
 #menu {
   position: fixed;
   z-index: 99;
+  display: flex;
+  justify-content: center;
+  /* outline: 1px solid red; */
+  width: 100%;
+}
+#menu li{ 
+  margin: 1em 2em;
+}
+
+
+/* slider arrow */
+.fp-controlArrow.fp-prev{
+  left: 50px;
+}
+
+.fp-controlArrow.fp-next{
+  right: 50px;
+}
+
+
+#section3 { overflow: hidden;}
+#rocket{
+  width: 800px;
+  position: absolute;
+  left: 50%; top: 90%;
+  transform: translateX(-50%);
+}
+
+#rocket.play {
+  animation-name: rocket;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rocket{
+  0% { top: 90%;}
+  100% { top: -120%;}
 }
