@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>fullPage.js - Base example</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- 메뉴는 fullpage 바깥에 추가 
+  data-menuanchor와 동명의 섹셕 id 값을 fullpage({}) 옵션anchors[]에 추가
+-->
+<ul id="menu">
+	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+	<li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+</ul>
+<div id="fullpage">
+    <div class="section" id="section1">
+      <h1>Home</h1>
+    </div>
+    <div class="section" id="section2">
+      <h1>My Works</h1>
+        <div class="slide" data-anchor="slide1">
+          <ul>
+            <li><img src="http://placehold.it/400x400&text=1" alt=""></li>
+            <li><img src="http://placehold.it/400x400&text=2" alt=""></li>
+          </ul>
+        </div>
+        <div class="slide" data-anchor="slide2">Two 2</div>
+    </div>
+    <div class="section" id="section3">Three</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
